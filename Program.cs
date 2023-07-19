@@ -6,23 +6,23 @@ namespace Averagely
         static void Main()
         {
            Console.WriteLine("The average Calculator");
-           Console.Write("Enter fist Number: ");
-           decimal number1 = Convert.ToDecimal(Console.ReadLine());
+           Console.Write("Mathematics grade: ");
+           decimal Mathematics = Convert.ToDecimal(Console.ReadLine());
 
-           Console.Write("Enter second Number: ");
-           decimal number2 = Convert.ToDecimal(Console.ReadLine());
+           Console.Write("Biology grade: ");
+           decimal Biology = Convert.ToDecimal(Console.ReadLine());
 
-            Console.Write("Enter third Number: ");
-           decimal number3 = Convert.ToDecimal(Console.ReadLine());
+            Console.Write("Art grade: ");
+            decimal Art = Convert.ToDecimal(Console.ReadLine());
 
-            Console.Write("Enter fourth Number: ");
-            decimal number4 = Convert.ToDecimal(Console.ReadLine());
+            Console.Write("Chesmistry grade: ");
+            decimal Chesmistry = Convert.ToDecimal(Console.ReadLine());
 
-            Console.Write("Enter fifth Number: ");
-            decimal number5 = Convert.ToDecimal(Console.ReadLine());
+            Console.Write("Sciences grade: ");
+            decimal Sciences = Convert.ToDecimal(Console.ReadLine());
 
-            decimal avg = (number1 + number2 + number3 + number4 + number5)/5;
-            Console.WriteLine("Average: " + avg);
+            decimal avg = (Mathematics + Biology + Art + Chesmistry + Sciences)/5;
+            Console.WriteLine("Average Grade: " + avg);
         }
     }
 }
