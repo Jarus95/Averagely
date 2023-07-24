@@ -31,10 +31,6 @@ namespace Averagely
                 
             else if(average <= 4 && average > 3)
                 Console.WriteLine("Yoe are a good student");
-
-            decimal average = (mathematics + biology + art + chesmistry + sciences)/5;
-
-            Console.WriteLine("Average Grade: " + average);
         }
     }
 }
