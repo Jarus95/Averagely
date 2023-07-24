@@ -1,4 +1,4 @@
-# Averagely
+# Averagely v1.0
 This program will help you find the average of 5 numbers
 
 Have a look at `Program.cs` file and you can see how I have used:
