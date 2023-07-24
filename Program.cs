@@ -7,11 +7,12 @@ namespace Averagely
         {
             Console.WriteLine("The average Calculator");
             Console.Write("Mathematics grade: ");
+
             decimal mathematics = Convert.ToDecimal(Console.ReadLine());
 
             Console.Write("Biology grade: ");
             decimal biology = Convert.ToDecimal(Console.ReadLine());
-
+          
             Console.Write("Art grade: ");
             decimal art = Convert.ToDecimal(Console.ReadLine());
 
@@ -31,11 +32,9 @@ namespace Averagely
             else if(average <= 4 && average > 3)
                 Console.WriteLine("Yoe are a good student");
 
-            else if(average > 0 && average <=3)
-               Console.WriteLine("Yoe are a bad student");
+            decimal average = (mathematics + biology + art + chesmistry + sciences)/5;
 
-            else
-               Console.WriteLine("Invalid Input");
+            Console.WriteLine("Average Grade: " + average);
         }
     }
 }
