@@ -23,23 +23,9 @@ namespace Averagely
             Console.Write("Sciences grade: ");
             decimal sciences = Convert.ToDecimal(Console.ReadLine());
 
-
             decimal average = (mathematics + biology + art + chesmistry + sciences)/5;
 
             Console.WriteLine("Average Grade: " + average);
-            Console.WriteLine(new string('-', 40));
-            
-            if(average > 4 && average <=5 )
-                Console.WriteLine("Yoe are an Exellent student");
-                
-            else if(average <= 4 && average > 3)
-                Console.WriteLine("Yoe are a good student");
-
-            else if(average > 0 && average <=3)
-               Console.WriteLine("Yoe are a bad student");
-
-            else
-               Console.WriteLine("Invalid Input");
         }
     }
 }
