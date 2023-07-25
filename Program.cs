@@ -27,10 +27,16 @@ namespace Averagely
             Console.WriteLine(new string('-', 40));
             
             if(average > 4 && average <=5 )
-                Console.WriteLine("Yoe are an Exellent student");
-                
-            else if(average <= 4 && average > 3)
-                Console.WriteLine("Yoe are a good student");
+                 Console.WriteLine("Yoe are an Exellent student");
+
+            else if(average <= 4 && average >= 3)
+                 Console.WriteLine("Yoe are a good student");
+
+            else if(average < 3  && average > 0)
+                 Console.WriteLine("Yoe are a bad student");
+
+            else 
+                 Console.WriteLine("Invalid Input");
         }
     }
 }
