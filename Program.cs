@@ -5,27 +5,26 @@ namespace Averagely
     {
         static void Main()
         {
+          bool isRepeat = false;
+
+          do
+          {
             Console.WriteLine("The average Calculator");
-            Console.Write("Mathematics grade: ");
+            Console.Write("Please enter quantity grades: ");
+            string numbers = Console.ReadLine();
+            int quantity = int.Parse(numbers);
 
-            decimal mathematics = Convert.ToDecimal(Console.ReadLine());
-
-            Console.Write("Biology grade: ");
-            decimal biology = Convert.ToDecimal(Console.ReadLine());
-          
-            Console.Write("Art grade: ");
-            decimal art = Convert.ToDecimal(Console.ReadLine());
-
-            Console.Write("Chesmistry grade: ");
-            decimal chesmistry = Convert.ToDecimal(Console.ReadLine());
-
-            Console.Write("Sciences grade: ");
-            decimal sciences = Convert.ToDecimal(Console.ReadLine());
-
-            decimal average = (mathematics + biology + art + chesmistry + sciences)/5;
+            int countGrades = 0;
+            for(int iteration = 1; iteration <= quantity; iteration++)
+            {
+               Console.Write($"{iteration}.Grade: ");
+               countGrades+= int.Parse(Console.ReadLine());
+            }
+            
+            decimal average = countGrades/quantity;
             Console.WriteLine("Average Grade: " + average);
             Console.WriteLine(new string('-', 40));
-            
+
             if(average > 4 && average <=5 )
                  Console.WriteLine("Yoe are an Exellent student");
 
@@ -37,6 +36,15 @@ namespace Averagely
 
             else 
                  Console.WriteLine("Invalid Input");
+
+             Console.WriteLine();
+             Console.Write("Do you want to Repeat? [y/n]: ");
+             string answer = Console.ReadLine();
+
+             isRepeat = answer == "y" ? true : false;                  
+          }
+
+          while(isRepeat);
         }
     }
 }
