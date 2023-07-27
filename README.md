@@ -15,13 +15,13 @@ Have a look at `Program.cs` file and you can see how I have used:
 
 ## Release Notes
 
-### v2.0
+### **[v2.0](https://github.com/Jarus95/Averagely/tree/releases/v2.0)**
 
 #### New Features
 * You can choose how many subject calculate
 * Program to ask you to try again
 
-### v1.0
+### **[v1.0](https://github.com/Jarus95/Averagely/tree/releases/v1.0)**
 
 #### Features
 * You can find the average of 5 subjects
