@@ -9,6 +9,7 @@ Have a look at `Program.cs` file and you can see how I have used:
 * Arithmetic operation to find student GPA
 * Logical operations to what kind of student are you
 * Loop operations
+* The try-catch statement
 
 ## Demo
 ![demo](./Assets/demo-live-2.gif)
@@ -20,6 +21,7 @@ Have a look at `Program.cs` file and you can see how I have used:
 #### New Features
 * You can choose how many subject calculate
 * Program to ask you to try again
+* Handle exceptions that might occur during execution
 
 ### **[v1.0](https://github.com/Jarus95/Averagely/tree/releases/v1.0)**
 

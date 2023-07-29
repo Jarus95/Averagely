@@ -9,17 +9,28 @@ namespace Averagely
 
           do
           {
+            int countGrades = 0;
+            int quantity = 0;
             Console.WriteLine("The average Calculator");
             Console.Write("Please enter quantity grades: ");
-            string numbers = Console.ReadLine();
-            int quantity = int.Parse(numbers);
-
-            int countGrades = 0;
-            for(int iteration = 1; iteration <= quantity; iteration++)
+            
+            try
             {
-               Console.Write($"{iteration}.Grade: ");
-               countGrades+= int.Parse(Console.ReadLine());
+               string numbers = Console.ReadLine();
+               quantity = int.Parse(numbers);
+
+               for(int iteration = 1; iteration <= quantity; iteration++)
+               {
+                  Console.Write($"{iteration}.Grade: ");
+                  countGrades+= int.Parse(Console.ReadLine());
+               }
             }
+
+            catch(Exception ex)
+            {
+               Console.WriteLine(ex.Message);
+            }
+
             
             decimal average = countGrades/quantity;
             Console.WriteLine("Average Grade: " + average);
